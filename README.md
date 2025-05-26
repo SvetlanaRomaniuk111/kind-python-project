@@ -7,6 +7,7 @@ This project demonstrates how to run a simple Flask app inside a Kubernetes clus
 kind-python-project/
 ├── .devcontainer/
 │   └── devcontainer.json
+│   └── setup.sh
 ├── .vscode/
 │   └── settings.json
 ├── src/
@@ -76,7 +77,8 @@ kubectl apply -f ingress.yaml
 You can use the provided script to start port-forwarding and open the browser automatically:
 ✅ Recommended:
 ```bash
-.\start-port-forward.bat
+.\start-port-forward.bat # для Windows (локально)
+.\start-port-forward.sh  # для Codespaces (Linux)
 ```
 🧪 Or manually (for debugging)
 ```bash
