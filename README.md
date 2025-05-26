@@ -7,9 +7,11 @@ This project demonstrates how to run a simple Flask app inside a Kubernetes clus
 kind-python-project/
 ├── .devcontainer/
 │   └── devcontainer.json
+├── .vscode/
+│   └── settings.json
 ├── src/
-│ └── kind_python_project/
-│ └── app.py
+│   └── kind_python_project/
+│       └── app.py
 ├── deployment.yaml
 ├── Dockerfile
 ├── ingress.yaml

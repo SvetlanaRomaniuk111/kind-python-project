@@ -1,6 +1,6 @@
 setup:
 	docker build -t my-python-app:latest .
-	kind create cluster --wait 60s
+	kind create cluster --name dev --wait 60s
 	kind load docker-image my-python-app:latest
 	kubectl apply -f deployment.yaml
 	kubectl apply -f service.yaml

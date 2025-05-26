@@ -1,17 +1,19 @@
 {
-  "name": "kind-python",
-  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "name": "kind-python-dev",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
     "ghcr.io/devcontainers/features/kind:1": {}
   },
+  "forwardPorts": [
+    80
+  ],
   "postCreateCommand": "make setup",
-  "forwardPorts": [80],
   "customizations": {
     "vscode": {
-      "settings": {},
       "extensions": [
+        "ms-python.python",
         "ms-kubernetes-tools.vscode-kubernetes-tools",
-        "ms-python.python"
+        "redhat.vscode-yaml"
       ]
     }
   }
