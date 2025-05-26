@@ -6,8 +6,8 @@ This project demonstrates how to run a simple Flask app inside a Kubernetes clus
 
 kind-python-project/
 ├── .devcontainer/
-│   └── devcontainer.json
-│   └── setup.sh
+│   └── devcontainer.json          # Налаштування Codespaces
+│   └── setup.sh                   # Автоматичний запуск кластеру
 ├── .vscode/
 │   └── settings.json
 ├── src/
@@ -19,7 +19,8 @@ kind-python-project/
 ├── Makefile
 ├── requirements.txt
 ├── service.yaml
-├── start-port-forward.bat
+├── start-port-forward.sh          # 🟢 Для запуску в Codespaces (Linux)
+├── start-port-forward.bat         # 🟦 Для запуску на Windows (локально)
 └── README.md
 
 ---
