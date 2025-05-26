@@ -3,13 +3,13 @@
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {},
-    "ghcr.io/devcontainers/features/kubectl:1": {},
-    "ghcr.io/devcontainers/features/kind:1": {}
+    "ghcr.io/devcontainers/features/kind:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
   },
   "forwardPorts": [
     80
   ],
-  "postCreateCommand": "make setup",
+  "postCreateCommand": "curl -LO https://dl.k8s.io/release/v1.32.2/bin/linux/amd64/kubectl && chmod +x kubectl && sudo mv kubectl /usr/local/bin && make setup",
   "customizations": {
     "vscode": {
       "extensions": [
