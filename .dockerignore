@@ -1,0 +1,42 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+*.log
+
+# Byte-compiled
+*.pyc
+*.pyo
+
+# Test artifacts
+.pytest_cache/
+.coverage
+.tox/
+.nox/
+.cache/
+htmlcov/
+
+# Virtual environments
+env/
+venv/
+.venv/
+ENV/
+.kind-python-project-py3.*/
+
+# Git
+.git/
+.gitignore
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -5,15 +5,17 @@ This project demonstrates how to run a simple Flask app inside a Kubernetes clus
 ## 📁 Project Structure
 
 kind-python-project/
-│
+├── .devcontainer/
+│   └── devcontainer.json
 ├── src/
 │ └── kind_python_project/
 │ └── app.py
-├── requirements.txt
-├── Dockerfile
 ├── deployment.yaml
-├── service.yaml
+├── Dockerfile
 ├── ingress.yaml
+├── Makefile
+├── requirements.txt
+├── service.yaml
 ├── start-port-forward.bat
 └── README.md
 
