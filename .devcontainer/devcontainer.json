@@ -1,20 +1,11 @@
 {
-  "name": "kind-python-dev",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
-  },
-  "forwardPorts": [
-    80
-  ],
-  "postCreateCommand": "chmod +x .devcontainer/setup.sh && .devcontainer/setup.sh",
+  "name": "kind-python-project",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "postStartCommand": "./.devcontainer/start-kind.sh",
+  "features": {},
   "customizations": {
     "vscode": {
-      "extensions": [
-        "ms-python.python",
-        "ms-kubernetes-tools.vscode-kubernetes-tools",
-        "redhat.vscode-yaml"
-      ]
+      "extensions": []
     }
   }
 }
